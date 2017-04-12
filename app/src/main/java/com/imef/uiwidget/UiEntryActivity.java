@@ -38,6 +38,7 @@ public class UiEntryActivity extends BaseActivity implements EntryListAdapter.On
     private void initEntryList() {
         mEntryList = new ArrayList<>();
         mEntryList.add(new Pair<String, Class>("TextInputLayout", TextInputLayoutActivity.class));
+        mEntryList.add(new Pair<String, Class>("DrawerLayout", DrawerLayoutActivity.class));
     }
 
     @Override
