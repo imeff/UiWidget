@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.imef.uiwidget.adapter.EntryListAdapter;
+import com.imef.uiwidget.adapter.TextureActivity;
 
 import java.util.ArrayList;
 
@@ -39,6 +40,7 @@ public class UiEntryActivity extends BaseActivity implements EntryListAdapter.On
         mEntryList = new ArrayList<>();
         mEntryList.add(new Pair<String, Class>("TextInputLayout", TextInputLayoutActivity.class));
         mEntryList.add(new Pair<String, Class>("DrawerLayout", DrawerLayoutActivity.class));
+        mEntryList.add(new Pair<String, Class>("Texture", TextureActivity.class));
     }
 
     @Override

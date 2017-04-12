@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.imef.uiwidget">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,6 +22,7 @@
         <activity android:name=".UiEntryActivity"/>
         <activity android:name=".TextInputLayoutActivity"/>
         <activity android:name=".DrawerLayoutActivity"/>
+        <activity android:name=".adapter.TextureActivity"/>
     </application>
 
 </manifest>
