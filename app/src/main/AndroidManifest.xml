@@ -23,6 +23,8 @@
         <activity android:name=".TextInputLayoutActivity"/>
         <activity android:name=".DrawerLayoutActivity"/>
         <activity android:name=".adapter.TextureActivity"/>
+        <activity android:name=".SnackBarActivity"/>
+        <activity android:name=".NavigationActivity"/>
     </application>
 
 </manifest>

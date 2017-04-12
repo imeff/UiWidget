@@ -2,6 +2,8 @@ package com.imef.uiwidget;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.util.Pair;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -41,6 +43,8 @@ public class UiEntryActivity extends BaseActivity implements EntryListAdapter.On
         mEntryList.add(new Pair<String, Class>("TextInputLayout", TextInputLayoutActivity.class));
         mEntryList.add(new Pair<String, Class>("DrawerLayout", DrawerLayoutActivity.class));
         mEntryList.add(new Pair<String, Class>("Texture", TextureActivity.class));
+        mEntryList.add(new Pair<String, Class>("SnackBar", SnackBarActivity.class));
+        mEntryList.add(new Pair<String, Class>("Navigation", NavigationActivity.class));
     }
 
     @Override
