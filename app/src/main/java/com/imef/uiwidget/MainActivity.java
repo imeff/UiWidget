@@ -34,7 +34,8 @@ public class MainActivity extends BaseActivity implements EntryListAdapter.OnEnt
 
     private void initEntryList() {
         mEntryList = new ArrayList<>();
-        mEntryList.add(new Pair<String, Class>("Ui控件", UiEntryActivity.class));
+        mEntryList.add(new Pair<String, Class>("Design控件", UiEntryActivity.class));
+        mEntryList.add(new Pair<String, Class>("自定义控件", CustomViewActivity.class));
     }
 
     @Override

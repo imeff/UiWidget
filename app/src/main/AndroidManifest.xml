@@ -25,6 +25,9 @@
         <activity android:name=".adapter.TextureActivity"/>
         <activity android:name=".SnackBarActivity"/>
         <activity android:name=".NavigationActivity"/>
+        <activity android:name=".SearchViewActivity"/>
+        <activity android:name=".CustomViewActivity"/>
+
     </application>
 
 </manifest>
