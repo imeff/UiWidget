@@ -1,17 +1,22 @@
-package com.imef.uiwidget;
+package com.imef.uiwidget.activity.design;
 
 import android.content.Intent;
-import android.support.v4.util.Pair;
 import android.os.Bundle;
+import android.support.v4.util.Pair;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.imef.uiwidget.activity.BaseActivity;
+import com.imef.uiwidget.R;
 import com.imef.uiwidget.adapter.EntryListAdapter;
 
 import java.util.ArrayList;
 
-public class MainActivity extends BaseActivity implements EntryListAdapter.OnEntryClick {
+/**
+ * Created by Administrator on 2017/4/11.
+ */
 
+public class DesignUiEntryActivity extends BaseActivity implements EntryListAdapter.OnEntryClick {
 
     private ArrayList<Pair<String, Class>> mEntryList;
     private RecyclerView mRecyclerView;
@@ -34,14 +39,17 @@ public class MainActivity extends BaseActivity implements EntryListAdapter.OnEnt
 
     private void initEntryList() {
         mEntryList = new ArrayList<>();
-        mEntryList.add(new Pair<String, Class>("Design控件", UiEntryActivity.class));
-        mEntryList.add(new Pair<String, Class>("自定义控件", CustomViewActivity.class));
+        mEntryList.add(new Pair<String, Class>("TextInputLayout", TextInputLayoutActivity.class));
+        mEntryList.add(new Pair<String, Class>("DrawerLayout", DrawerLayoutActivity.class));
+        mEntryList.add(new Pair<String, Class>("Texture", TextureActivity.class));
+        mEntryList.add(new Pair<String, Class>("SnackBar", SnackBarActivity.class));
+        mEntryList.add(new Pair<String, Class>("Navigation", NavigationActivity.class));
     }
 
     @Override
     public void onClick(Class activityClass) {
         Intent intent = new Intent();
-        intent.setClass(this, activityClass);
+        intent.setClass(this , activityClass);
         startActivity(intent);
     }
 }

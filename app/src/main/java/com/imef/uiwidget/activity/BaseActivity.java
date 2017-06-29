@@ -1,4 +1,4 @@
-package com.imef.uiwidget;
+package com.imef.uiwidget.activity;
 
 import android.support.v7.app.AppCompatActivity;
 

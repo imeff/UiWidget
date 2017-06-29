@@ -1,10 +1,13 @@
-package com.imef.uiwidget;
+package com.imef.uiwidget.activity.design;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
+
+import com.imef.uiwidget.R;
+import com.imef.uiwidget.activity.BaseActivity;
 
 /**
  * Created by Administrator on 2017/4/11.

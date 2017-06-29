@@ -1,15 +1,13 @@
-package com.imef.uiwidget.adapter;
+package com.imef.uiwidget.activity.design;
 
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.Gravity;
 import android.view.TextureView;
-import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import com.imef.uiwidget.BaseActivity;
+import com.imef.uiwidget.activity.BaseActivity;
 import com.imef.uiwidget.R;
 
 import java.io.IOException;

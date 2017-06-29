@@ -1,4 +1,4 @@
-package com.imef.uiwidget;
+package com.imef.uiwidget.activity.feature;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,16 +6,17 @@ import android.support.v4.util.Pair;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.imef.uiwidget.R;
+import com.imef.uiwidget.activity.BaseActivity;
 import com.imef.uiwidget.adapter.EntryListAdapter;
-import com.imef.uiwidget.adapter.TextureActivity;
 
 import java.util.ArrayList;
 
 /**
- * Created by yqzheng on 2017/4/20.
+ * Created by Administrator on 2017/4/11.
  */
 
-public class CustomViewActivity extends BaseActivity implements EntryListAdapter.OnEntryClick{
+public class FeatureActivity extends BaseActivity implements EntryListAdapter.OnEntryClick {
 
     private ArrayList<Pair<String, Class>> mEntryList;
     private RecyclerView mRecyclerView;
@@ -38,7 +39,7 @@ public class CustomViewActivity extends BaseActivity implements EntryListAdapter
 
     private void initEntryList() {
         mEntryList = new ArrayList<>();
-        mEntryList.add(new Pair<String, Class>("SearchView", SearchViewActivity.class));
+        mEntryList.add(new Pair<String, Class>("截屏", ScreenShotActivity.class));
     }
 
     @Override

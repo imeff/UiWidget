@@ -3,6 +3,7 @@
     package="com.imef.uiwidget">
 
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,15 +20,29 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".UiEntryActivity"/>
-        <activity android:name=".TextInputLayoutActivity"/>
-        <activity android:name=".DrawerLayoutActivity"/>
-        <activity android:name=".adapter.TextureActivity"/>
-        <activity android:name=".SnackBarActivity"/>
-        <activity android:name=".NavigationActivity"/>
-        <activity android:name=".SearchViewActivity"/>
-        <activity android:name=".CustomViewActivity"/>
+        <activity android:name=".activity.design.DesignUiEntryActivity"/>
+        <activity android:name=".activity.design.TextInputLayoutActivity"/>
+        <activity android:name=".activity.design.DrawerLayoutActivity"/>
+        <activity android:name=".activity.design.TextureActivity"/>
+        <activity android:name=".activity.design.SnackBarActivity"/>
+        <activity android:name=".activity.design.NavigationActivity"/>
 
+
+        <activity android:name=".activity.custom.SearchViewActivity"/>
+        <activity android:name=".activity.custom.CustomViewActivity"/>
+        <activity android:name=".activity.custom.OutlineTextViewActivity"/>
+        <activity android:name=".activity.custom.DragableActivity"/>
+
+        <activity android:name=".activity.transition.PageTransitionActivity"/>
+        <activity android:name=".activity.transition.Explode1Activity"/>
+        <activity android:name=".activity.transition.Explode2Activity"/>
+
+
+        <activity android:name=".activity.feature.FeatureActivity"/>
+        <activity android:name=".activity.feature.ScreenShotActivity"/>
+
+        <activity android:name=".activity.validate.ValidateActivity"/>
+        <activity android:name=".activity.validate.LireCycleActivity"/>
     </application>
 
 </manifest>
